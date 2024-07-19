@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucidity</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="home-header"> Welcome to Lucidity</div>
+        <div class="home-subheader"> Make informed investment decisions</div>
+
+        <div class="search-box">
+            <form class="search-box" action="/search" method="GET">
+                <input type="text" id="search-input" name="query" placeholder="Search..." required
+                    oninput="searchSymbols()">
+                <button type="submit" id="search-button"><img src="/static/images/loupe.png" alt="Search"></button>
+            </form>
+            <div id="search-results" class="autocomplete-items"></div>
+
+        </div>
+
+        <div class="disclaimer"> Please feel free to search for any publicly listed U.S. stock. Note that the valutations provided by Lucidity are based on current best estimates. </div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+
+</html>
