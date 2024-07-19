@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucidity Navbar</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/layout.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="/">Lucidity</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="search-box">
+                <form class="search-box" action="/search" method="GET">
+                    <input type="text" id="search-input" name="query" placeholder="Search..." required
+                        oninput="searchSymbols()">
+                    <button type="submit" id="search-button"><img src="/static/images/loupe.png" alt="Search"></button>
+                </form>
+                <div id="search-results" class="autocomplete-items"></div>
+
+            </div>
+            </form>
+        </div>
+    </nav>
+<div class="horizontal-line"></div>
+
+
+    <div class="container">
+        {% block content %}
+        {% endblock %}
+    </div>
+    
+
+    <script src="/static/script.js"></script>
+
+</body>
+
+</html>

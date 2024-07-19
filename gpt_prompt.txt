@@ -1,0 +1,37 @@
+I also implemented a different valuation method: the residual earnings model. You are are going to write a formal paragraph reconciling the valuations of these two methods and what is actually informing the price of the given company: 
+
+Book value: 62146000000.0
+
+Forecasted Book Values: [62146000000.0, 70293013241.45808, 80009394479.9419, 91597452774.86913, 105417731307.66019, 121900225083.82089]
+Residual Earning Values: [90780400000.0, 89965698675.85419, 88994060552.00581, 87835254722.51309, 86453226869.23398]
+Discounted Residual Earnings: [79530114821.55328, 69048777196.92949, 59838345255.40208, 51740060819.92122, 44614784051.56326]
+Continuing Value: 712860741041.873
+Discounted continuing value: 367876702491.6987
+Intrinsic Value: 734794784637.0681
+Intrinsic Value Per Share: 47.253498532068015
+
+Use the above information to justify the valuation of the firm. tell me if the firm is overvalued or undervalued. Look at the given financial information and tell me what is driving the valuation of the company. Use general information and understanding of the company. Keep the paragraph short, professional and accessible. 
+
+Suppose i give you the stock AAPL. Included are the valuations from a DCF. You are a professor in corporate valuations giving a professional overview of a stock's value to a retail investor.
+
+CAGR: 0.1403
+Forecasted Free Cash Flows for the next 5 years: [113557417746.60486, 129491556126.25449, 147661539340.52667, 168381096441.18448, 192007978281.68124]
+Risk-Free Rate (10-Year Treasury Yield): 0.0426
+Average Annual Return of S&P 500: 0.0889
+Market Risk Premium: 0.0463
+WACC: 0.1419
+
+I have calculated that the resulting fair value estimate of AAPL is: $68.33129782513498 /share. The current value of AAPL is: $ 207.4900.
+
+I also implemented a different valuation method: the residual earnings model. You are are going to write a formal paragraph reconciling the valuations of these two methods and what is actually informing the price of the given company:
+
+Book value: 62146000000.0
+Forecasted Book Values: [62146000000.0, 70293013241.45808, 80009394479.9419, 91597452774.86913, 105417731307.66019, 121900225083.82089]
+Residual Earning Values: [90780400000.0, 89965698675.85419, 88994060552.00581, 87835254722.51309, 86453226869.23398]
+Discounted Residual Earnings: [79530114821.55328, 69048777196.92949, 59838345255.40208, 51740060819.92122, 44614784051.56326]
+Continuing Value: 712860741041.873
+Discounted continuing value: 367876702491.6987
+Intrinsic Value: 734794784637.0681
+Intrinsic Value Per Share: 47.253498532068015
+
+Use the above information to justify the valuation of the firm. tell me if the firm is overvalued or undervalued. Look at the given financial information and tell me what is driving the valuation of the company. Use general information and understanding of the company. Keep the paragraph short, professional and accessible.

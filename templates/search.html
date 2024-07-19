@@ -1,0 +1,114 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<link rel="stylesheet" href="{{url_for('static', filename='search.css')}}">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="/static/script.js"></script>
+
+<div class="container">
+
+    {% if company %}
+
+    <div class="row">
+        <div class="col-md-11">
+            <div class="company-name">{{company['Name']}}</div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-11">
+            <div class="stock-price">{{ current_shareprice }} </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8">
+            <div class="chart-placeholder mt-3">
+                <canvas id="stockChart"></canvas>
+                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
+                <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+            </div>
+
+            <div class="valuation-header"> Valuation Metrics</div>
+
+            <div class="valuation-result"> {{company['Name']}} is <strong>{{valuation_status}}</strong></div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="info-box">
+                        <h5>Discounted Cash Flow</h5>
+                        <p>Forecasted Free Cashflows:</p>
+                        <p>Terminal Value:</p>
+                        <p>Discount Rate:</p>
+                        <p><strong>Valuation: {{dcf_value}}</strong></p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="info-box">
+                        <h5>Residual Earnings Model</h5>
+                        <p>Forecasted Free Cashflows:</p>
+                        <p>Terminal Value:</p>
+                        <p>Discount Rate:</p>
+                        <p><strong>Valuation: {{re_value}}</strong></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="justification-header">Explaining the valuation above</div>
+            <div class="gpt-response"> {{ gpt_response }} </div>
+
+
+
+
+        </div>
+        <div class="col-md-4">
+            <div class="company-info">
+
+                <h5>{{ company['Symbol'] }} Company Info</h5>
+                <p><strong>Market Capitalization: </strong>{{ market_cap }}</p>
+                <p><strong>Dividend Yield:</strong> {{ company['DividendYield'] }}</p>
+                <p><strong>PE Ratio:</strong> {{ company['PERatio'] }}</p>
+                <p><strong>EPS:</strong> {{ company['EPS'] }}</p>
+                <p><strong>Previous Close:</strong> {{ company[] }}</p>
+                <p><strong>Day Range:</strong> {{ day_range }}</p>
+                <p><strong>Year Range:</strong> {{ year_range }}</p>
+                <p><strong>Primary Exchange:</strong> {{ company['Exchange'] }}</p>
+            </div>
+
+            <div class="info-box">
+                <h5>Company Bio</h5>
+                <p><strong>Description:</strong> {{company['Description']}} </p>
+                <p><strong>Industry:</strong> {{company['Industry']}} </p>
+                <p><strong>Sector:</strong> {{company['Sector']}} </p>
+                <p><strong>CEO:</strong> tbd</p>
+                <p><strong>Website:</strong> tbd </p>
+                <p><strong>Headquarters:</strong> {{company['Address']}} </p>
+                <p><strong>Employees:</strong> tbd </p>
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-12">
+            <h2 class="news-header">Recent News</h2>
+            <div id="news-container" class="row">
+                <!-- News items will be injected here -->
+            </div>
+        </div>
+    </div>
+
+
+    {% else %}
+    <p>No data available for the specified query.</p>
+    {% endif %}
+</div>
+{% endblock %}
