@@ -14,9 +14,6 @@ Lucidity is a cutting-edge financial platform that automates stock valuations us
 - **Automated Financial Modeling**: Provides full automation of the stock valuation process, aside from result interpretation, significantly streamlining the workflow for financial analysis.
 - **AI Integration**: Innovatively uses AI to explain complex financial concepts, making valuation results accessible to non-experts.
 
-## Demo
-[Technical Demo](#)
-
 ## Installation
 To set up Lucidity for development or personal use, follow these steps:
 
