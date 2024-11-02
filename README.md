@@ -9,7 +9,10 @@ Lucidity is a cutting-edge financial platform that automates stock valuations us
 - **AI-Powered Valuation Explanations**: Uses ChatGPT-4o to explain discrepancies and provide insights into different valuation methodologies.
 - **Real-Time Financial Data**: Pulls stock data via the Alpha Vantage API and scrapes treasury financial data from CNBC Finance.
 - **User-Friendly Interface**: A Python-based backend and dynamic HTML/CSS/JavaScript frontend ensure ease of interaction for users looking to analyze stock valuations.
-  
+
+## Technical demo
+[Technical Demo](https://youtu.be/SqSVIARP48s)
+
 ## Achievements
 - **Automated Financial Modeling**: Provides full automation of the stock valuation process, aside from result interpretation, significantly streamlining the workflow for financial analysis.
 - **AI Integration**: Innovatively uses AI to explain complex financial concepts, making valuation results accessible to non-experts.
